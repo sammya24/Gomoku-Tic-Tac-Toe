@@ -1,13 +1,3 @@
-# CSE 332 Lab Base
-Repository for submitting lab work
-
-Note: We will read this file as raw text rather than markdown.
-
-Name: Samantha Hong
-Lab #: 4
-
-Document your lab work here according to the lab specification
-
 # Design Comments
 * I interpreted the instructions for the draw() method for TicTacToe to indicate that the method should return if there are no more empty squares to make moves ("if there are no more moves remaining and the game has not been completed successfully")
 * Throughout my code, I refer to the vertical and horizontal coordinates of the board using their numerical value, except when referring to the strict bounds of the board (3 for TicTacToe, 19 for Gomoku). I thought it was more confusing for readers to try and create labels like valid_board_start and valid_board_end for every single different coordinate. This would be especially difficult for readers in the parts of my code where I check for winning moves, as there are many different combinations of positions that could create a win.
